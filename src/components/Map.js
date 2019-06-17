@@ -351,9 +351,12 @@ class Map extends Component {
     render() {
         return (
             <div>
+<Container>
+<Grid columns={1} style ={{height: "100vh"}} >
+    <Grid.Row >
+    <Grid.Column style ={{border: "2px solid blue"}}width={16}>
 
-<Container style={{ height: '100vh', width: '100%' ,border: "2px solid red"}}>
-<Menu/>
+{/* <div style={{ height: '400px', width: '100%' ,border: "2px solid red"}}> */}
 {/* <Grid> */}
           {/* <Grid.Row> */}
         <GoogleMapReact
@@ -363,18 +366,18 @@ class Map extends Component {
           bootstrapURLKeys={{ key: key }} 
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-        >
-         
-            {/* lat={59.955413}
+        
+            lat={59.955413}
             lng={30.337844}
-            text="My Marker" */}
-</GoogleMapReact>
-{/* </Grid.Row> */}
-{/* </Grid> */}
+            text="My Marker"
+            />
+{/* </div> */}
+</Grid.Column>
 
+
+</Grid.Row>
+</Grid>
 </Container>
-
-
 
             </div>
 

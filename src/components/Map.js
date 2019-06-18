@@ -1,42 +1,39 @@
 import React, { Component } from 'react';
 import { Popup, Button, Container, Grid, Header, Menu, Icon} from 'semantic-ui-react'
 import GoogleMapReact from 'google-map-react';
-
+import Markers from "./Markers"
 const sampleData = [
     
     {     
           "id": 1,
           "name": "Evanston",
           "lat": 42.045597,
-          "lng": -87.688568
+          "lng": -87.688568,
+          "description": "very far north"
     },
 
     {     
         "id": 2,
         "name": "Willis Tower",
         "lat": 41.878876,
-        "lng": -87.635918
+        "lng": -87.635918,
+        "description": "very tall"
+
   },
 
   {     
     "id": 3,
     "name": "Navy Pier",
     "lat": 41.892654,
-    "lng": -87.610168
+    "lng": -87.610168,
+    "description": "lots of tourists"
+
 }
       ]
     
 
 
 const mapStyle = require('./styles.json')
-const AnyReactComponent = () => <Popup
-trigger=
-{ <Icon name='marker' size ='big' color ='red'/>  }
->
-<Popup.Header>User Rating</Popup.Header>
-<Popup.Content>
-Hello    </Popup.Content>
-</Popup>
 
 const key = process.env.REACT_APP_API_KEY
 
@@ -59,7 +56,7 @@ class Map extends Component {
             <div>
 <Container>
   <Menu/>
-<Grid columns={1} style ={{height: "100vh", border: "solid 2px red"}} >
+<Grid columns={1} style ={{height: "100vh"}} >
 <Grid.Row>
 <Grid.Column width={16}> 
 
@@ -77,11 +74,12 @@ class Map extends Component {
        
       {  sampleData.map(item =>
      
-            <AnyReactComponent
+            <Markers
               key={item.key}
               lat={item.lat}
               lng={item.lng}
               name={item.name}
+              description={item.description}
               onChildMouseEnter ={this.onChildMouseEnter}
               onChildMouseLeave ={this.onChildMouseLeave}
               

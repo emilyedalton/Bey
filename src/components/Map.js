@@ -2,6 +2,32 @@ import React, { Component } from 'react';
 import { Popup, Button, Container, Grid, Header, Menu, Icon} from 'semantic-ui-react'
 import GoogleMapReact from 'google-map-react';
 
+const sampleData = [
+    
+    {     
+          "id": 1,
+          "name": "Evanston",
+          "lat": 42.045597,
+          "lng": -87.688568
+    },
+
+    {     
+        "id": 2,
+        "name": "Willis Tower",
+        "lat": 41.878876,
+        "lng": -87.635918
+  },
+
+  {     
+    "id": 3,
+    "name": "Navy Pier",
+    "lat": 41.892654,
+    "lng": -87.610168
+}
+      ]
+    
+
+
 const mapStyle = require('./styles.json')
 const AnyReactComponent = () => <Icon name='marker' size ='big' color ='red'/>;
 
@@ -11,10 +37,11 @@ class Map extends Component {
     static defaultProps = {
        
         center: {
+          key: 1,
           lat: 41.8781,
           lng: -87.6298
         },
-        zoom: 11
+        zoom: 10
       };
 
     render() {
@@ -35,11 +62,16 @@ class Map extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}>
        
-         <AnyReactComponent 
-             lat={42.045597}
-             lng={-87.688568}
-           
-           /> 
+       
+      {  sampleData.map(item =>
+            <AnyReactComponent
+              key={item.key}
+              lat={item.lat}
+              lng={item.lng}
+            />
+        )
+       }
+    
          </GoogleMapReact>  
             
          </Grid.Column> 

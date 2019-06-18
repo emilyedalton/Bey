@@ -29,11 +29,20 @@ const sampleData = [
 
 
 const mapStyle = require('./styles.json')
-const AnyReactComponent = () => <Icon name='marker' size ='big' color ='red'/>;
+const AnyReactComponent = () => <Popup
+trigger=
+{ <Icon name='marker' size ='big' color ='red'/>  }
+>
+<Popup.Header>User Rating</Popup.Header>
+<Popup.Content>
+Hello    </Popup.Content>
+</Popup>
 
 const key = process.env.REACT_APP_API_KEY
+
 class Map extends Component {
-   
+    
+ 
     static defaultProps = {
        
         center: {
@@ -45,6 +54,7 @@ class Map extends Component {
       };
 
     render() {
+
         return (
             <div>
 <Container>
@@ -60,16 +70,24 @@ class Map extends Component {
         }}
           bootstrapURLKeys={{ key: key }} 
           defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}>
+          defaultZoom={this.props.zoom}
+          onChildMouseEnter ={this.onChildMouseEnter}
+          onChildMouseLeave ={this.onChildMouseLeave}>
        
        
       {  sampleData.map(item =>
+     
             <AnyReactComponent
               key={item.key}
               lat={item.lat}
               lng={item.lng}
-            />
-        )
+              name={item.name}
+              onChildMouseEnter ={this.onChildMouseEnter}
+              onChildMouseLeave ={this.onChildMouseLeave}
+              
+/>            
+     
+        ) 
        }
     
          </GoogleMapReact>  

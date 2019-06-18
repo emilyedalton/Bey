@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Container, Grid, Header, Menu} from 'semantic-ui-react'
+import { Popup, Button, Container, Grid, Header, Menu, Icon} from 'semantic-ui-react'
 import GoogleMapReact from 'google-map-react';
+
 const mapStyle =[
     {
         "featureType": "administrative",
@@ -336,6 +337,8 @@ const mapStyle =[
         ]
     }
 ] 
+const AnyReactComponent = () => <Icon name='marker' size ='big' color ='red'/>;
+
 const key = process.env.REACT_APP_API_KEY
 class Map extends Component {
    
@@ -352,37 +355,38 @@ class Map extends Component {
         return (
             <div>
 <Container>
-<Grid columns={1} style ={{height: "100vh"}} >
-    <Grid.Row >
-    <Grid.Column style ={{border: "2px solid blue"}}width={16}>
+  <Menu/>
+<Grid columns={1} style ={{height: "100vh", border: "solid 2px red"}} >
+<Grid.Row>
+<Grid.Column width={16}> 
 
 {/* <div style={{ height: '400px', width: '100%' ,border: "2px solid red"}}> */}
-{/* <Grid> */}
-          {/* <Grid.Row> */}
         <GoogleMapReact
          options={{
             styles: mapStyle
         }}
           bootstrapURLKeys={{ key: key }} 
           defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        
-            lat={59.955413}
-            lng={30.337844}
-            text="My Marker"
-            />
-{/* </div> */}
-</Grid.Column>
-
-
+          defaultZoom={this.props.zoom}>
+       
+         <AnyReactComponent 
+             lat={42.045597}
+            lng={-87.688568}
+           
+           /> 
+         </GoogleMapReact>  
+            
+         </Grid.Column> 
+  
 </Grid.Row>
 </Grid>
 </Container>
+</div>
 
-            </div>
 
     
-        )}
+        )
+    }
     }
 
     export default Map

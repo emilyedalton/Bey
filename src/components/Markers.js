@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Popup, Icon} from 'semantic-ui-react'
+import { Popup, Icon, Image} from 'semantic-ui-react'
 
 class Markers extends Component {
     render() {
@@ -12,6 +12,8 @@ trigger=
 >
 <Popup.Header>{this.props.name}</Popup.Header>
 <Popup.Content>
+<Image src={this.props.image} />
+
 {this.props.description}</Popup.Content>
 </Popup>
 </div>

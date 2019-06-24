@@ -6,29 +6,29 @@ const sampleData = [
     
     {     
           "id": 1,
-          "name": "Evanston",
-          "lat": 42.045597,
-          "lng": -87.688568,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Fountain_Square_Evanston.jpg/1024px-Fountain_Square_Evanston.jpg",
+          "name": "Lavezzorio Community Center",
+          "lat": 41.75595,
+          "lng": -87.63883,
+          "image": require('../assets/Bey_Test.jpg'),
           "description": "very far north"
     },
 
     {     
         "id": 2,
-        "name": "Willis Tower",
-        "lat": 41.878876,
-        "lng": -87.635918,
-        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Willis_Tower_From_Lake.jpg/800px-Willis_Tower_From_Lake.jpg",
+        "name": "Eighth Regiment Armory/Chicago Military Academy",
+        "lat": 41.83109,
+        "lng": -87.61933,
+        "image": require('../assets/Bey_Test.jpg'),
         "description": "very tall"
 
   },
 
   {     
     "id": 3,
-    "name": "Navy Pier",
-    "lat": 41.892654,
-    "lng": -87.610168,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Navy_Pier_1190x1585.jpg/800px-Navy_Pier_1190x1585.jpg",
+    "name": "Former Wabash Avenue YMCA",
+    "lat": 41.64575,
+    "lng": -87.620160,
+    "image": require('../assets/Bey_Test.jpg'),
     "description": "lots of tourists"
 
 }
@@ -50,7 +50,7 @@ class Map extends Component {
           lat: 41.8781,
           lng: -87.6298
         },
-        zoom: 10
+        zoom: 14
       };
 
     render() {
@@ -66,13 +66,16 @@ class Map extends Component {
 {/* <div style={{ height: '400px', width: '100%' ,border: "2px solid red"}}> */}
         <GoogleMapReact
          options={{
-            styles: mapStyle
+            styles: mapStyle,
+            draggableCursor: "default",
+            draggingCursor: "pointer"
         }}
           bootstrapURLKeys={{ key: key }} 
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           onChildMouseEnter ={this.onChildMouseEnter}
-          onChildMouseLeave ={this.onChildMouseLeave}>
+          // onChildMouseLeave ={this.onChildMouseLeave}
+          >
        
        
       {  sampleData.map(item =>

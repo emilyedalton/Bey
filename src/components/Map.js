@@ -377,10 +377,10 @@ class Map extends Component {
        
         center: {
           key: 1,
-          lat: 41.8781,
-          lng: -87.6298
+          lat: 41.7827210454577,
+          lng: -87.69907772541046,
         },
-        zoom: 14
+        zoom: 11
       };
 
     render() {

@@ -1,6 +1,13 @@
 import React from 'react'
-import { Image } from 'semantic-ui-react'
+import { Segment } from 'semantic-ui-react'
 
-const ImageExampleFluid = () => <Image src= {require('../assets/BEY_105.jpg')}fluid />
+const Font= {
 
-export default ImageExampleFluid
+fontfamily: "nunito,sans-serif",
+fontweight: "400",
+fontstyle: "normal"
+}
+
+const Heading  = () => <Segment style = {Font} padded='very' content ="Mapping Southern Exposure " as= "h1"textAlign='left'/>
+
+export default Heading

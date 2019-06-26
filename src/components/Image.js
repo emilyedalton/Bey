@@ -1,13 +1,19 @@
 import React from 'react'
-import { Segment } from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
+import Nav from '../components/Nav'
+import '../assets/css/index.css'
 
-const Font= {
+const fonts = {
+    
+        fontfamily: 'Bungee Inline'
+    }
+    
 
-fontfamily: "nunito,sans-serif",
-fontweight: "400",
-fontstyle: "normal"
-}
 
-const Heading  = () => <Segment style = {Font} padded='very' content ="Mapping Southern Exposure " as= "h1"textAlign='left'/>
+
+const Heading  = () => <Container style = {{height: "200px"}} padded='very' content ="Mapping Southern Exposure " as= "h1"textAlign='left'/>
+
+
+
 
 export default Heading

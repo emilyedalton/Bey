@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Popup, Button, Container, Grid, Header, Menu, Icon} from 'semantic-ui-react'
 import GoogleMapReact from 'google-map-react';
 import Markers from "./Markers"
-
+import Nav from "./Nav"
 const sampleData = [
     
   {
@@ -389,7 +389,7 @@ class Map extends Component {
         return (
             <div>
 <Container>
-  <Menu/>
+    <Nav/>
 <Grid columns={1} style ={{height: "100vh"}} >
 <Grid.Row>
 <Grid.Column width={16}> 

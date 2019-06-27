@@ -390,7 +390,6 @@ class Map extends Component {
 
         return (
             <div>
-<Image/>
 <Container>
     <Nav/>
 <Grid columns={1} style ={{height: "100vh"}} >

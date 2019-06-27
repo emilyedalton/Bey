@@ -4,8 +4,11 @@ import { Menu, Sticky,  } from 'semantic-ui-react'
 
 
 class Nav extends Component {
-
+    state = {}
+    handleContextRef = contextRef => this.setState({ contextRef })
+    
   render() {
+      
     return (
       <div ref={this.contextRef}>
         <Sticky context={this.contextRef}>

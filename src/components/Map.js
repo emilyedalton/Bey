@@ -3,6 +3,8 @@ import { Popup, Button, Container, Grid, Header, Menu, Icon} from 'semantic-ui-r
 import GoogleMapReact from 'google-map-react';
 import Markers from "./Markers"
 import Nav from "./Nav"
+import Image from "./Image"
+
 const sampleData = [
     
   {
@@ -388,6 +390,7 @@ class Map extends Component {
 
         return (
             <div>
+<Image/>
 <Container>
     <Nav/>
 <Grid columns={1} style ={{height: "100vh"}} >

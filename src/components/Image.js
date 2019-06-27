@@ -1,18 +1,17 @@
 import React from 'react'
-import { Container, Grid } from 'semantic-ui-react'
+import { Container, Grid, Segment } from 'semantic-ui-react'
 import Nav from '../components/Nav'
 import '../assets/css/index.css'
 
-const fonts = {
-    
-        fontfamily: 'Bungee Inline'
-    }
+
     
 
 
 
-const Heading  = () => <Container 
- style={{height: "200px", backgroundColor: "#ADD8E6"}}  >
+const Heading  = () => <Segment style={{height: "200px", backgroundColor: "#91c7ed", color:"white"}}  >>
+
+<Container>
+ 
  <Grid>
  <Grid.Row />
  <Grid.Column  width= {1}/>
@@ -47,7 +46,7 @@ Plotting architecht and photographer Lee Bey's docmuentation of Chicago's South 
 </Grid.Column>
 </Grid>
  </Container>
-
+</Segment>
 
 
 

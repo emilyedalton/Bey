@@ -17,9 +17,10 @@ class Nav extends Component {
             tabular
             style={{ backgroundColor: '#fff', paddingTop: '1em' }}
           >
-            <Menu.Item as='a' active name='bio' />
-            <Menu.Item as='a' active={false} name='photos' />
+            <Menu.Item as='a' active name='Map' />
+            {/* <Menu.Item as='a' active={false} name='photos' /> */}
             <Menu.Menu position='right'>
+           <Menu.Item  as='a' href="http://nupress.northwestern.edu/content/southern-exposure" target ="_blank" active={false} name='Buy the Book'/>
              </Menu.Menu>
              </Menu>
              </Sticky>

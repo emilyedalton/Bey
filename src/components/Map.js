@@ -391,7 +391,7 @@ class Map extends Component {
         return (
             <div>
 <Container>
-    <Nav/>
+    {/* <Nav/> */}
 <Grid columns={1} style ={{height: "100vh"}} >
 <Grid.Row>
 <Grid.Column width={16}> 

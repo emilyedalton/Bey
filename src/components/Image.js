@@ -8,7 +8,7 @@ import '../assets/css/index.css'
 
 
 
-const Heading  = () => <Segment style={{height: "200px", backgroundColor: "#91c7ed", color:"white"}}  >>
+const Heading  = () => <Segment style={{height: "200px", backgroundColor: "#91c7ed", color:"white"}}  >
 
 <Container>
  

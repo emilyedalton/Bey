@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Grid, Header, List, Segment} from 'semantic-ui-react'
+import { Container, Grid, Header, Image, Segment} from 'semantic-ui-react'
 
 class Footer extends Component {
     render() {
@@ -12,8 +12,8 @@ class Footer extends Component {
     <Grid >
       <Grid.Row/>
         <Grid.Column align="left"  width={2}>
-        "Logo"
-          </Grid.Column>         
+        <Image src={require('../assets/NUP_logo_REV.svg')} height={"80px"}/>       
+         </Grid.Column>         
           <Grid.Column align="left"  width={2}>
         Website
         </Grid.Column>   

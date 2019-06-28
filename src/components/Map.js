@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Popup, Button, Container, Grid, Header, Menu, Icon} from 'semantic-ui-react'
 import GoogleMapReact from 'google-map-react';
 import Markers from "./Markers"
-import Nav from "./Nav"
+import List from "./List"
 import Image from "./Image"
 
 const sampleData = [
@@ -424,12 +424,14 @@ class Map extends Component {
               onChildMouseLeave ={this.onChildMouseLeave}
               
 />            
-     
+      
         ) 
        }
+     
     
          </GoogleMapReact>  
-            
+        
+  
          </Grid.Column> 
   
 </Grid.Row>

@@ -1,0 +1,31 @@
+
+  [  
+    {
+      "key": 1,
+      "name": "Lavezzorio Community Center",
+      "address": "7600 South Parnell Avenue",
+      "lat": 41.75595,
+      "lng": -87.63883,
+      "description": "With its layered concrete exterior and open, kid-friendly interiors,this building was designed by architect Jeanne Gang in 2008.",
+      "image": "BEY_9.jpg"
+  },
+  {
+      "key": 2,
+      "name": "Former Wabash Avenue YMCA",
+      "address": "3763 South Wabash Avenue",
+      "lat": 41.64575,
+      "lng": -87.62016,
+      "description": "This former YMCA served Bronzeville from 1913 through the 1970s. Today, the building is the Renaissance Apartments, with 101 single-room occupancy units and a fitness center.",
+      "image": "BEY_21.jpg"
+  },
+  {
+      "key": 3,
+      "name": "Eighth Regiment Armory/Chicago Military Academy",
+      "address": "3519 South Giles Avenue",
+      "lat": 41.83109,
+      "lng": -87.61933,
+      "image": "BEY_24.jpg"
+  }
+]
+
+

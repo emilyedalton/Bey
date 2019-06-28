@@ -1,6 +1,6 @@
 import React ,{Component} from 'react'
-import { Menu, Sticky,  } from 'semantic-ui-react'
-import {NavLink, Link, } from 'react-router-dom'
+import { Menu, Sticky, Button } from 'semantic-ui-react'
+import {NavLink, Link } from 'react-router-dom'
 
 
 
@@ -24,7 +24,9 @@ class Nav extends Component {
 
             {/* <Menu.Item as='a' active={false} name='photos' /> */}
             <Menu.Menu position='right'>
-           <Menu.Item  as='a' href="http://nupress.northwestern.edu/content/southern-exposure" target ="_blank" active={false} name='Buy the Book'/>
+           <Menu.Item >
+           <Button as='a' href="http://nupress.northwestern.edu/content/southern-exposure" target ="_blank" active={false} content='Buy the Book'/>
+           </Menu.Item>
              </Menu.Menu>
              </Menu>
              </Sticky>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Item} from 'semantic-ui-react'
+import { Grid, Item} from 'semantic-ui-react'
 
 const data = [
     
@@ -369,8 +369,9 @@ class List extends Component {
         return (
     <div>
      {data.map(item => 
-   
  <Item.Group>
+      <Grid.Row/>  
+
     <Item>
       <Item.Image size='large' src={item.image} />
 
@@ -381,6 +382,7 @@ class List extends Component {
 {item.description} </Item.Description>
       </Item.Content>
     </Item>
+    <Grid.Row/>  
 </Item.Group>
      )}
          </div>

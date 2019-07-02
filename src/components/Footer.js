@@ -7,14 +7,14 @@ class Footer extends Component {
         return (
     <div>
 
-  <Segment inverted  style={{ height:"100px",backgroundColor: "#91c7ed"}}>
+  <Segment inverted  style={{ height:"150px",backgroundColor: "#91c7ed"}}>
   <Container>
-    <Grid >
+    <Grid verticalAlign='middle'>
       <Grid.Row/>
-        <Grid.Column align="left"  width={2}>
-        <Image src={require('../assets/NUP_logo_REV.svg')} height={"80px"}/>       
+        <Grid.Column align="center"  width={2}>
+        <Image   src={require('../assets/NUP_logo_REV.svg')} height={"80px"}/>       
          </Grid.Column>         
-          <Grid.Column align="left"  width={2}>
+          <Grid.Column  align="center"  width={2}>
         Website
         </Grid.Column>   
         <Grid.Column align="left" width={2}>

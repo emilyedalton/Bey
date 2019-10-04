@@ -17,6 +17,7 @@ trigger=
         <Image src= {this.props.image} />
         <Card.Content>
           <Card.Header>{this.props.name}</Card.Header>
+          <p>{this.props.address}</p>
           <Card.Description>
           {this.props.description}
           </Card.Description>
@@ -24,16 +25,7 @@ trigger=
       </Card>}
       on='click'
 ></Popup>
-{/* <Grid style ={{border:"2px solid green"}} columns={2}>
-<Grid.Column width={16} style ={{border:"2px solid red"}}>
-<Image src={this.props.image}/>
-</Grid.Column>
-<Grid.Row/>
-<Grid.Column width={16} style ={{border:"2px solid blue"}}>
-{this.props.description}
-</Grid.Column> */}
 
-{/* </Grid> */}
 
 </div>
         )

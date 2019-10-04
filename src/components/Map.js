@@ -410,6 +410,7 @@ class Map extends Component {
               lat={item.lat}
               lng={item.lng}
               name={item.name}
+              address={item.address}
               image={item.image}
               description={item.description}
               onChildMouseEnter ={this.onChildMouseEnter}

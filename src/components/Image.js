@@ -35,8 +35,7 @@ const Heading  = () => <Segment style={{height: "200px", backgroundColor: "#91c7
 <Grid.Column  as= "p"textAlign='left'width={9}>
 
 <Grid.Row>
-Plotting architecht and photographer Lee Bey's docmuentation of Chicago's South Side. 
-
+Architecht and photographer Lee Bey documented the remarkable and unsung architecture of Chicago's South Side in his book Southern Exposure. Learn more about the sites in the book in this interactive map. 
 
  </Grid.Row>
  </Grid.Column>

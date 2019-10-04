@@ -12,8 +12,8 @@ class Footer extends Component {
     <Grid verticalAlign='middle'>
       <Grid.Row/>
         <Grid.Column align="left"  width={16}>
-        <Header as='h4' >
-© Emily Dalton
+        <Header as='a' href="http://www.emilyedalton.com" target ="_blank" active={false} >
+© Emily Dalton 
           </Header>
          
         </Grid.Column>

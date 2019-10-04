@@ -1,6 +1,6 @@
 import React ,{Component} from 'react'
 import { Menu, Sticky, Button } from 'semantic-ui-react'
-import {NavLink, Link } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Grid, Popup, Icon, Image} from 'semantic-ui-react'
+import { Card, Popup, Icon, Image} from 'semantic-ui-react'
 
 class Markers extends Component {
     render() {

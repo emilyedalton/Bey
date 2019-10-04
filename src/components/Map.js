@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Popup, Button, Container, Grid, Header, Menu, Icon} from 'semantic-ui-react'
+import { Container, Grid, } from 'semantic-ui-react'
 import GoogleMapReact from 'google-map-react';
 import Markers from "./Markers"
-import List from "./List"
-import Image from "./Image"
 
 const sampleData = [
     
@@ -388,7 +386,6 @@ class Map extends Component {
 <Grid.Row>
 <Grid.Column width={16}> 
 
-{/* <div style={{ height: '400px', width: '100%' ,border: "2px solid red"}}> */}
         <GoogleMapReact
          options={{
             styles: mapStyle,
@@ -399,7 +396,6 @@ class Map extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
           onChildMouseEnter ={this.onChildMouseEnter}
-          // onChildMouseLeave ={this.onChildMouseLeave}
           >
        
        

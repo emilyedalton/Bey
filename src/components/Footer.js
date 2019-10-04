@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Grid, Header, Image, Segment} from 'semantic-ui-react'
+import { Container, Grid, Header, Segment} from 'semantic-ui-react'
 
 class Footer extends Component {
     render() {
@@ -12,7 +12,7 @@ class Footer extends Component {
     <Grid verticalAlign='middle'>
       <Grid.Row/>
         <Grid.Column align="left"  width={16}>
-        <Header as='a' href="http://www.emilyedalton.com" target ="_blank" active={false} >
+        <Header size="small" as='a' href="http://www.emilyedalton.com" target ="_blank" active={false} >
 © Emily Dalton 
           </Header>
          

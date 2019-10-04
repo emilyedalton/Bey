@@ -63,8 +63,8 @@ const sampleData = [
     "key": 7,
     "name": "Illinois Institute of Technology Machinery Hall",
     "address": "100 West Thirty-Third Street",
-    "lat": 41.87897,
-    "lng": -87.66063,
+    "lat": 41.835657,
+    "lng": -87.626869,
     "description": "Located just north of the Old Main Building; the two structures together formed the core of the Armour Institute of Technology, which was the forerunner to IIT.",
     "image": require('../assets/BEY_41.jpg')
 },
@@ -126,8 +126,8 @@ const sampleData = [
     "key": 14,
     "name": "Chicago Vocational High School",
     "address": "2100 East Eighty-Seventh Street",
-    "lat": 41.87897,
-    "lng": -87.66063,
+    "lat": 41.738760,
+    "lng": -87.572826,
     "description": "The monumental gymnasium entrance sits on the eastern edge of the city’s second largest school, matching a similarly designed auditorium front on the western end.",
     "image": require('../assets/BEY_61.jpg')
 },
@@ -135,8 +135,8 @@ const sampleData = [
     "key": 15,
     "name": "James H. Bowen High School",
     "address": "2710 East Eighty-Ninth Place",
-    "lat": 41.878971,
-    "lng": -87.660629,
+    "lat": 41.734373,
+    "lng": -87.557582,
     "description": "This handsome brick Prairie School building—albeit obscured by sketchy-looking trees and landscaping—was built in 1910 and designed by famed architect Dwight Perkins.",
     "image": require('../assets/BEY_65.jpg')
 },
@@ -171,8 +171,8 @@ const sampleData = [
     "key": 19,
     "name": "Jovita Idar Elementary School",
     "address": "5050 South Homan Avenue",
-    "lat": 41.941421,
-    "lng": -87.732836,
+    "lat": 41.802465,
+    "lng": -87.709612,
     "description": "Built in 2011 and named in honor of a Mexican American journalist and activist, this sleek charter school was designed by Juan Moreno and Ghafari Architects.",
     "image": require('../assets/BEY_79.jpg')
 },
@@ -252,8 +252,8 @@ const sampleData = [
     "key": 28,
     "name": "John Moutoussamy Home",
     "address": "361 East Eighty-Ninth Place",
-    "lat": 41.87897,
-    "lng": -87.66063,
+    "lat": 41.731854,
+    "lng": -87.615205,
     "description": "Architect Moutoussamy designed this elegant one-story home for himself and his family.",
     "image": require('../assets/BEY_104.jpg')
 },
@@ -266,26 +266,18 @@ const sampleData = [
     "description": "Built in 1958, this Chatham home is an exercise in geometry—right down to its landscaping and topiary.",
     "image": require('../assets/BEY_105.jpg')
 },
+
 {
     "key": 30,
-    "name": "8650 South Michigan Avenue",
-    "address": "8650 South Michigan Avenue",
-    "lat": 41.736656,
-    "lng": -87.621299,
-    "description": "Unusual angles and curves help this modernist home get the most out of its relatively small city lot. The C-shaped house has a neat entry garden behind a low brick wall that matches the house. The home’s attached garage faces busy Eighty-Seventh Street. The garage provides direct car access from the street while shielding the living space from the thoroughfare’s noise and bustle.",
-    "image": require('../assets/BEY_106.jpg')
-},
-{
-    "key": 31,
     "name": "Lu and Jorja Palmer House",
     "address": "3656 South King Drive",
     "lat": 41.713634,
     "lng": -87.613952,
-    "description": "Designed by William L. Clay and built in 1885, this three-story dwelling is one of the city’s best examples of the homes built for the very rich in nineteenthcentury Chicago. The house is in deplorable condition, thanks to its Chicago developer owner. ",
+    "description": "Designed by William L. Clay and built in 1885, this three-story dwelling is one of the city’s best examples of the homes built for the very rich in nineteenth century Chicago. The house is in deplorable condition, thanks to its Chicago developer owner. ",
     "image": require('../assets/BEY_109.jpg')
 },
 {
-    "key": 32,
+    "key": 31,
     "name": "Rosenwald Apartments",
     "address": "Forty-Seventh Street and Michigan Avenue",
     "lat": 41.810208,
@@ -294,7 +286,7 @@ const sampleData = [
     "image": require('../assets/BEY_111.jpg')
 },
 {
-    "key": 33,
+    "key": 32,
     "name": "Yale Apartments",
     "address": "6565 South Yale Avenue",
     "lat": 41.774709,
@@ -303,7 +295,7 @@ const sampleData = [
     "image": require('../assets/BEY_115.jpg')
 },
 {
-    "key": 34,
+    "key": 33,
     "name": "GN Bank",
     "address": "4619 South King Drive",
     "lat": 41.713634,
@@ -312,7 +304,7 @@ const sampleData = [
     "image": require('../assets/BEY_119.jpg')
 },
 {
-    "key": 35,
+    "key": 34,
     "name": "Pride Cleaners,",
     "address": "558 East Seventy-Ninth Street",
     "lat": 41.809652,
@@ -321,7 +313,7 @@ const sampleData = [
     "image": require('../assets/BEY_121.jpg')
 },
 {
-    "key": 36,
+    "key": 35,
     "name": "Jackson Park Beach House",
     "address": "Sixty-Third Street and the Lake",
     "lat": 41.781428,
@@ -330,7 +322,7 @@ const sampleData = [
     "image": require('../assets/BEY_128.jpg')
 },
 {
-    "key": 37,
+    "key": 36,
     "name": "Auburn Lakes",
     "address": "Seventy-Eighth Street and Eggleston Avenue",
     "lat": 41.752596,
@@ -339,25 +331,25 @@ const sampleData = [
     "image": require('../assets/BEY_134.jpg')
 },
 {
-    "key": 38,
+    "key": 37,
     "name": "Oak Woods Cemetery",
     "address": "1035 East Sixty-Seventh Street",
-    "lat": 41.87897,
-    "lng": -87.66063,
+    "lat": 41.776019,
+    "lng": -87.602843,
     "description": "With trees, lakes, and winding paths, this cemetery is a serene spot that was designed by landscape architect Adolph Strauch to be enjoyed by the living.",
     "image": require('../assets/BEY_135.jpg')
 },
 {
-    "key": 39,
+    "key": 38,
     "name": "CTA Red Line Terminal",
     "address": "14 West Ninety-Fifth Street",
-    "lat": 41.878971,
-    "lng": -87.660629,
+    "lat": 41.721393,
+    "lng": -87.624405,
     "description": "This bright red transit station is a key link to downtown from the South Side. Replacing a smaller, fifty-year-old station, the facility features a pair of terminals connected by a 150-foot pedestrian bridge across Ninety-Fifth Street.",
     "image": require('../assets/BEY_149.jpg')
 },
 {
-    "key": 40,
+    "key": 39,
     "name": "Pedestrian Bridge",
     "address": "Forty-First Street and Lake Park Avenue",
     "lat": 41.820148,

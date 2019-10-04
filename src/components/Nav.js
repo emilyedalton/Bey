@@ -22,7 +22,6 @@ class Nav extends Component {
             <Menu.Item as={NavLink} to='/' name="Map" />
             <Menu.Item as={NavLink} to='/list' name="List" />
 
-            {/* <Menu.Item as='a' active={false} name='photos' /> */}
             <Menu.Menu position='right'>
            <Menu.Item >
            <Button as='a' href="http://nupress.northwestern.edu/content/southern-exposure" target ="_blank" active={false} content='Buy the Book'/>

@@ -7,9 +7,8 @@ import '../assets/css/index.css'
 const Heading  = () => (
 
 <Segment style={{backgroundColor: "#91c7ed", color:"white"}}>
- 
+ <Container>
  <Grid>
- <Grid.Row />
 
  <Grid.Column  as= "h1"textAlign='left' width={16}>
 
@@ -29,6 +28,7 @@ const Heading  = () => (
 </Grid.Row>
 </Grid.Column>
 </Grid>
+</Container>
  </Segment>
 )
 export default Heading

@@ -7,16 +7,11 @@ class Footer extends Component {
         return (
     <div>
 
-  <Segment inverted  style={{backgroundColor: "#91c7ed"}}>
+  <Segment  style={{backgroundColor: "#91c7ed"}}>
   <Container>
     <Grid verticalAlign='middle'>
       <Grid.Row/>
-       
-       
-       
-       
-    
-        <Grid.Column align="right"  width={16}>
+        <Grid.Column align="left"  width={16}>
         <Header as='h4' >
 © Emily Dalton
           </Header>

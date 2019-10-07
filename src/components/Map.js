@@ -305,8 +305,8 @@ const sampleData = [
     "key": 34,
     "name": "Pride Cleaners,",
     "address": "558 East Seventy-Ninth Street",
-    "lat": 41.809652,
-    "lng": -87.611639,
+    "lat": 41.751450,
+    "lng": -87.610343,
     "description": "Designed by architect Gerald Siegwart and built in 1959, the building has an eye-catching hyperbolic paraboloid concrete roof.",
     "image": require('../assets/BEY_121.jpg')
 },

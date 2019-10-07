@@ -196,8 +196,8 @@ const sampleData = [
     "key": 22,
     "name": "Stony Island Church of Christ",
     "address": "1600 East Eighty-Fourth Street",
-    "lat": 41.751643,
-    "lng": -87.585085,
+    "lat": 41.742575,
+    "lng": -87.585060,
     "description": "This small, modernist church is located next to bustling Stony Island Avenue; it was designed by Ray Stuermer, an architect who was once chief-of-design for industrial designer Raymond Loewy.",
     "image": require('../assets/BEY_85.jpg')
 },

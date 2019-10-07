@@ -39,15 +39,4 @@ class App extends Component {
 export default App;
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//     <Image/>
 
-//   <Map/>
-//   <Footer/>
-//     </div>
-//   );
-// }
-
-// export default App;
